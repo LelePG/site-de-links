@@ -42,7 +42,7 @@
 			<header
 				class="w-full flex flex-col justify-center items-center text-center mb-3"
 			>
-				<img src="./imagens/perfil.png" alt="Foto de perfil" />
+				<img src="./imagens/perfil.jpeg" alt="Foto de perfil"  width="150px" height="150px" class= "rounded-full"/>
 				<h1 class="text-2xl font-bold text-slate-50 mt-3">
 					Letícia Pegoraro Garcez
 				</h1>
@@ -53,7 +53,7 @@
 						foreach($listaDeLinks as $link){
 							echo "<li class='p-3 bg-slate-300 rounded-3xl mt-2 hover:bg-slate-100'>
 							<a href='{$link->url}' target='_blank' rel='noopener' class = 'flex justify-center items-center gap-4'> 
-							<img src = 'imagens/logos/{$link->imagem}' alt='{$link->descricaoImagen}' /> 
+							<img src = 'imagens/logos/{$link->imagem}' alt='{$link->descricaoImagen}' width='20px' height='20px'/> 
 							{$link->texto}
 							</a>
 						</li>";
