@@ -49,7 +49,7 @@
 				<ul class="w-full text-center font-base m-0">
 					<?php					
 						foreach($listaDeLinks as $link){
-							echo "<li class='p-3 bg-slate-300 rounded-3xl mt-2 hover:bg-indigo-200'>
+							echo "<li class='p-3 bg-slate-300 rounded-3xl mt-2 hover:bg-slate-100'>
 							<a href='{$link->url}' target='_blank' rel='noopener' class = 'flex justify-center items-center gap-4'> 
 							<img src = imagens/logos/{$link->imagem} /> 
 							{$link->texto}
