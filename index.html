@@ -26,7 +26,8 @@
 				<ul class="w-full text-center font-base m-0">
 					<li v-for="link in links" :key="link.texto"
 						class="flex justify-center items-center gap-4 p-3 bg-slate-300 rounded-3xl mt-2 hover:bg-indigo-200">
-						<i :class="link.icone" class="text-2xl "></i>
+						<!-- <i :class="link.icone" class="text-2xl "></i> -->
+						<img :src="`imagens/logos/${link.icone}`" width = "20"></img>
 						<a :href="link.url" target="_blank" rel="noopener"> {{link.texto}}</a>
 					</li>
 				</ul>
@@ -37,12 +38,13 @@ const vue = new Vue({
   el: '#lista-links',
   data: {
     links:[
-        {texto: "Conheça meus projetos", icone:"lni lni-github-original", url:"https://github.com/LelePG"},
-        {texto: "Me encontre no LinkedIn", icone:"lni lni-linkedin-original", url:"https://www.linkedin.com/in/lelepg/ "},
-        {texto: "Ouça o Feministech Podcast", icone:"lni lni-headphone", url:"https://anchor.fm/feministech"},
-        {texto: "Leia meus artigos", icone:"lni lni-dev", url:"https://dev.to/lelepg"},
-        {texto: "Veja meus vídeos", icone:"lni lni-youtube", url:"https://www.youtube.com/channel/UCSTtVZeXrueBBRorTKDSAbQ/videos"},
-        {texto: "Veja meu currículo lattes", icone:"lni lni-graduation", url:" http://lattes.cnpq.br/0232535929212960"},
+        {texto: "Conheça meus projetos", icone:"github.png", url:"https://github.com/LelePG"},
+		{texto: "Veja o que ando produzindo por ai", icone:"polywork.png", url:"https://www.polywork.com/lelepg"},
+        {texto: "Me encontre no LinkedIn", icone:"linkedin.png", url:"https://www.linkedin.com/in/lelepg/ "},
+        {texto: "Ouça o Feministech Podcast", icone:"headset.png", url:"https://anchor.fm/feministech"},
+        {texto: "Leia meus artigos", icone:"dev.png", url:"https://dev.to/lelepg"},
+        {texto: "Assista meus vídeos", icone:"youtube.png", url:"https://www.youtube.com/channel/UCSTtVZeXrueBBRorTKDSAbQ/videos"},
+        {texto: "Veja meu currículo lattes", icone:"hat.png", url:" http://lattes.cnpq.br/0232535929212960"},
     ]
   }
 })
