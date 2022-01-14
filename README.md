@@ -22,7 +22,7 @@ Você pode rodar o projeto fazendo o download do repsoitório e então usando o 
 
 ## Quer copiar este projeto?
 Primeiro de tudo, sinta-se a vontade para fazer o fork do projeto a qualquer hora e utilizá-lo com os seus próprios links pessoais. As alterações que você precisará fazer, são as seguintes:
-* Trocar o arquivo perfil.jeg da pasta imagens por uma imagem sua (tamanho recomendado: 300x300);
+* Trocar o arquivo perfil.jpeg da pasta imagens por uma imagem sua (tamanho recomendado: 300x300);
 * Adicionar novos ícones na pasta imagens/logos caso isso seja necessário (tamanho recomendado: 40X40);
 * Alterar o array listaDeLinks definido no arquivo index.php para atualizá-lo com os seus links, frase que você quer que esteja associada ao ícone, nome do ícone, descrição do ícone (será utilizada no atributo alt das imagens) e por sim o link da sua rede social. Caso você não queria utilizar algum dos links que eu utilizei, basta apagar essa entrada no array.
 * Troque as cores. No momento, o gradiente de fundo está sendo representado pelas classes ```bg-gradient-to-r from-zinc-600 to-stone-800``` na tag body, e a cor de fundo dos links pelas classes ```bg-slate-300 hover:bg-slate-100``` definidas no li que está dentro do foreach no segundo bloco PHP. 
