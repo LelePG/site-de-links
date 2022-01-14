@@ -15,21 +15,23 @@
 		public $texto;
 		public $imagem;
 		public $url;
-			function __construct(String $texto,String $imagem, String $url ){
+		public $descricaoImagem;
+			function __construct(String $texto,String $imagem, String $descricaoImagem, String $url ){
 				$this->texto = $texto;
 				$this->imagem = $imagem;
+				$this->descricaoImagem = $descricaoImagem;
 				$this->url = $url;
 			}
 		}
 
 		$listaDeLinks= [
-			new LinkSocial("Conheça meus projetos", "github.png", "https://github.com/LelePG"),
-			new LinkSocial("Veja o que ando produzindo por ai", "polywork.png", "https://www.polywork.com/lelepg"),
-			new LinkSocial("Me encontre no LinkedIn", "linkedin.png", "https://www.linkedin.com/in/lelepg/ "),
-			new LinkSocial("Ouça o Feministech Podcast", "headset.png", "https://anchor.fm/feministech"),
-			new LinkSocial("Leia meus artigos", "dev.png", "https://dev.to/lelepg"),
-			new LinkSocial("Assista meus vídeos", "youtube.png", "https://www.youtube.com/channel/UCSTtVZeXrueBBRorTKDSAbQ/videos"),
-			new LinkSocial("Veja meu currículo lattes", "hat.png", " http://lattes.cnpq.br/0232535929212960"),
+			new LinkSocial("Conheça meus projetos", "github.png", "logo do Github", "https://github.com/LelePG"),
+			new LinkSocial("Veja o que ando produzindo por ai", "polywork.png", "logo do Polywork", "https://www.polywork.com/lelepg"),
+			new LinkSocial("Me encontre no LinkedIn", "linkedin.png", "logo do LinkedIn", "https://www.linkedin.com/in/lelepg/ "),
+			new LinkSocial("Ouça o Feministech Podcast", "headset.png", "headset genérico", "https://anchor.fm/feministech"),
+			new LinkSocial("Leia meus artigos", "dev.png","logo do dev.to", "https://dev.to/lelepg"),
+			new LinkSocial("Assista meus vídeos", "youtube.png", "logo do youtube", "https://www.youtube.com/channel/UCSTtVZeXrueBBRorTKDSAbQ/videos"),
+			new LinkSocial("Veja meu currículo lattes", "hat.png", "chapéu de formatura genérico"," http://lattes.cnpq.br/0232535929212960"),
 		];
 	?>
 
@@ -51,7 +53,7 @@
 						foreach($listaDeLinks as $link){
 							echo "<li class='p-3 bg-slate-300 rounded-3xl mt-2 hover:bg-slate-100'>
 							<a href='{$link->url}' target='_blank' rel='noopener' class = 'flex justify-center items-center gap-4'> 
-							<img src = imagens/logos/{$link->imagem} /> 
+							<img src = 'imagens/logos/{$link->imagem}' alt='{$link->descricaoImagen}' /> 
 							{$link->texto}
 							</a>
 						</li>";
