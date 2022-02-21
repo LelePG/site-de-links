@@ -28,7 +28,7 @@
 			new LinkSocial("Conheça meus projetos", "github.png", "logo do Github", "https://github.com/LelePG"),
 			new LinkSocial("Veja o que ando produzindo por ai", "polywork.png", "logo do Polywork", "https://www.polywork.com/lelepg"),
 			new LinkSocial("Me encontre no LinkedIn", "linkedin.png", "logo do LinkedIn", "https://www.linkedin.com/in/lelepg/ "),
-			new LinkSocial("Ouça o Feministech Podcast", "headset.png", "headset genérico", "https://anchor.fm/feministech"),
+			new LinkSocial("Ouça o Feministech Podcast", "podcast.png", "headset genérico", "https://anchor.fm/feministech"),
 			new LinkSocial("Leia meus artigos", "dev.png","logo do dev.to", "https://dev.to/lelepg"),
 			new LinkSocial("Assista meus vídeos", "youtube.png", "logo do youtube", "https://www.youtube.com/channel/UCSTtVZeXrueBBRorTKDSAbQ/videos"),
 			new LinkSocial("Veja meu currículo lattes", "hat.png", "chapéu de formatura genérico"," http://lattes.cnpq.br/0232535929212960"),
